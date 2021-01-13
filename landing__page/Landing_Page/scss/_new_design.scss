@@ -1,0 +1,39 @@
+.new_design{
+    width: 100%;
+    background:url("../img/Rectangle21.png") no-repeat,
+                url("../img/Rectangle222.png")  no-repeat;
+    background-position: right;
+    background-size: 40% 100%;
+    .inner{
+            padding: 90px 20px 90px 20px;
+        .content{
+            display: flex;
+            flex-direction: column;
+            width: 43%;
+            min-width: 420px;
+            }
+        span{
+            display: inline-block;
+            
+        }
+        h2{
+            margin:10px 0 60px 0;
+        }
+        p{
+            padding-bottom: 40px;
+        }
+    }
+}
+@media(max-width:620px){
+    .new_design{
+       background-image: url("../img/Rectangle222.png");
+        .inner{
+            padding: 40px 20px 0px 20px;
+        .content{
+            justify-content: center;
+            width: 100%;
+            min-width: unset;
+        }
+    }
+    }
+}

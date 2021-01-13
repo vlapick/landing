@@ -1,0 +1,120 @@
+.footer{
+    padding-bottom: 20px;
+    background:url("../img/rectangle_23.png") no-repeat right 0;
+    background-size: 13% 100%;
+    margin-bottom: 30px;
+    @media(max-width:965px){
+        background-size: 30% 100%;
+        .email{
+                padding-top: 25px;
+            }
+        }
+    @media(max-width:965px){
+           
+        background-size: 30% 100%;
+        .email{
+            padding-top: 25px;
+            }     
+        }
+        .inner{
+            display: flex;
+            justify-content: flex-start;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            padding: 60px 20px 30px 20px;
+            .company,.support,.about{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .support,.about{
+                flex-basis: 195px;
+            }
+            .company{
+                flex-basis: 245px;
+                margin-left: 15px;
+                margin-right: 40px;
+                @media(max-width:1135px){    
+                    margin-left: 0!important;   
+                }
+                .logo::after{
+                    content: url("../img/ex.png");
+                    position: relative;
+                    top:-10px;
+                    left:2px;
+                }
+            }
+            .logo{
+                font-size: 22px;
+                color: black;
+                span{
+                    font-size: 22px;
+                }
+            }
+            div a{
+                display: flex;
+                color: rgba(40, 40, 40, 0.66);
+                margin-top: 15px;
+            }
+            div p{
+            color:  rgba(40, 40, 40, 0.66);
+            margin-top: 7px;
+            }
+            .email_button {
+                display: flex;
+                position: relative;
+                input{
+                    height: 50px;
+                    width: 250px;
+                    margin-top: 15px;
+                    padding: 0 56px 0 10px;
+                    opacity: 0.4;
+                    border-radius: 2px;
+                    border: solid 1px #4e4e5e;
+                    background-color: #8d8d8d;
+                    &::placeholder{
+                        color: rgba(0, 0, 0, 0.4);
+                    }
+                }
+            }
+            h4{
+                margin-top: 7px;
+            }
+            .social_icon{
+            display: flex;
+            justify-content: space-around; 
+            margin-top: 10px;
+                a{
+                    display: inline-block;
+                    margin-top: 0;
+                    span{
+                        display: inline-block;
+                        background: center/cover;
+                        width: 35px;
+                        height: 25px;
+                    }
+                }
+            }
+            .button_send{
+            display: block;
+            width: 56px;
+            height: 50px;
+            background: url("../img/email.png");
+            position: absolute;
+            right: 0;
+            }
+        }
+}
+
+@media(max-width:714px){
+    .about{
+        padding-top: 25px;
+    }
+}
+@media(max-width:518px){
+
+    .support{
+        padding-top: 25px;
+
+    }
+}

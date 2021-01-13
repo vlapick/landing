@@ -1,0 +1,61 @@
+.co_founders{
+    background:url("../img/bg.png");
+    overflow: hidden;
+    .inner{
+        padding:100px 20px 100px 20px;
+        @media(max-width:656px)
+        {
+            padding-top: 35px!important;
+        }
+        .founders{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center;
+            .founder{
+                max-width: 290px;
+                margin-right: 10px;
+                @media(max-width:956px)
+                {
+                    padding-top: 35px;     
+                }
+                .img_founder{
+                    width:85px;
+                    height:85px;
+                    background-color: #4e4e5e;
+                    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+                    margin: 0 auto 10px auto;
+                }
+                span{
+                
+                    display: inline-block;
+                    margin-bottom: 25px;
+                    color: red;
+                }
+                h4{
+                    color: white;
+                    margin-bottom: 10px;
+                }
+                p{
+                    color:  rgba(246, 245, 243, 0.6);
+                }
+            }
+        }
+        .logo_partners{
+            width: 100%;
+            padding-top:60px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .logo1{
+                margin: 20px;
+                display: inline-flex;
+                width: 160px;
+                height: 80px;
+                justify-content: center;
+            }
+        }
+    }
+}

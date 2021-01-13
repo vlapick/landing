@@ -1,0 +1,36 @@
+.browser_display{
+    background: #f6f5f3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    .inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding-top: 90px;
+        .max_width{
+            margin-bottom: 50px;
+            max-width: 640px;
+            padding: 0 10px;
+        }
+        h2{
+            padding-bottom: 25px;
+        }
+    }
+    .img_display{
+        width: 100%;
+        height: 360px;
+        background: url("../img/display.png") no-repeat center bottom;
+        background-size: contain;  
+        @media(max-width:600px){
+            height: 280px!important;
+         }
+        @media(max-width:420px){
+            
+            height: 215px!important;
+         }
+    }
+}

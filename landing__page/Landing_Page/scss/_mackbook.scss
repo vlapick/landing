@@ -1,0 +1,52 @@
+.mackbook{
+    background:url("../img/rectangle_22.png") no-repeat 0 0;
+    background-size:47% 100%;
+    .inner{
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 20px 100px 20px;
+        @media(max-width:760px){
+            padding: 40px 20px;
+            justify-content: center;
+            .image_mackbook{
+                display: none;
+            }
+            .content{
+                padding: 0!important;
+                margin:0!important;
+                max-width: unset!important;
+            }
+        }
+        .image_mackbook{
+            width: 100%;
+            background: url("../img/macbook.png") no-repeat center left 10%;
+            background-size: contain;
+            position: relative;
+            top:50px;
+        }
+       .content{
+            max-width: 425px;
+            min-width: 365px;
+            margin-right: 20px;
+            padding-top: 80px;
+            h2{
+            padding: 20px 0 35px 0;
+            }
+        }
+    }
+}
+
+@media(max-width:450px){
+    .image_mackbook{
+        display: none;
+    }
+    .mackbook .inner{
+        padding-bottom: 60px;
+    }
+    .content{
+        max-width: unset!important;
+        margin:0!important;
+        min-width: unset!important;
+        width: 100%;
+    }
+}

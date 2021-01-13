@@ -1,0 +1,71 @@
+@import'font';
+@import'vars';
+@import 'header';
+@import 'new_design';
+@import 'new_features';
+@import 'mackbook';
+@import 'co_founders';
+@import 'browser_display';
+@import 'form_try_now';
+@import 'footer';
+body{
+    font-family: 'Exo',sans-serif;
+    
+}
+.inner{
+    max-width: 1170px;
+    padding: 0 20px;
+    height: 100%;
+    margin: 0 auto;
+    .uppercase{
+        color:#ff6d6d;
+        display: inline-block;
+        font-size: $span_size;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+    span{
+        font-size: $span_size;  
+    }
+    h2{
+        font-size: $h2_size;
+        font-weight: 600;
+    }
+    .after_point{
+        &::after{
+            content: " ....";
+            color:#ff6d6d;
+    }
+    }
+    h4{
+        font-size: $h4_size;   
+    }
+
+    p{
+        font-size: $p_size;
+        color:rgba(40, 40, 40, 0.6);
+    }
+    @media(max-width:635px){
+        h2{
+            font-size: $h2_size_small;
+        }
+        h4{
+            font-size: $h4_size_small;   
+        }
+        span{
+            font-size: $span_size_small;
+        }
+        p{
+            font-size: $p_size_small; 
+        }
+        a{
+            font-size: 14px; 
+        }
+    }
+}
+
+
+
+
+
+
